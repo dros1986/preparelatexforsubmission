@@ -9,6 +9,14 @@ It does the following operations:
 
 ## Installation
 
+It is possible to install the package directly from PyPI:
+
+```bash
+pip install preparelatexforsubmission
+```
+
+of from this GitHub repository with:
+
 ```bash
 pip install git+https://github.com/yourgithub/preparelatexforsubmission.git
 ```
