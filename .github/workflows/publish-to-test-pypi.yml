@@ -3,7 +3,7 @@ name: Publish to TestPyPI
 on:
   push:
     tags:
-      - "v*.*.*"  # Runs when a version tag is pushed (e.g., v0.1.0)
+      - "v*.*.*"
 
 jobs:
   deploy:
@@ -29,7 +29,6 @@ jobs:
       - name: Publish to TestPyPI
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_TEST_API_TOKEN }}  # Use your new secret
         run: |
           twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-
