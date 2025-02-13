@@ -1,4 +1,4 @@
-# Prepare LaTeX for Submission
+# Prepare LaTeX for ManuscriptCentral Submission
 
 This package helps flatten directories and update paths in a LaTeX project to prepare it for journal submission.
 
