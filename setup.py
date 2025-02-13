@@ -11,10 +11,11 @@ setup(
         ],
     },
     author="Flavio Piccoli",
+    author_email="dros1986@gmail.com",
     description="A tool to flatten directories and update paths in LaTeX projects for journal submission.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourgithub/preparelatexforsubmission",
+    url="https://github.com/dros1986/preparelatexforsubmission",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
