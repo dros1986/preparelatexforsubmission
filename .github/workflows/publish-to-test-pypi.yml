@@ -18,18 +18,20 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Install dependencies
+      - name: Install build dependencies  # Make sure 'build' is installed!
         run: |
           python -m pip install --upgrade pip
           pip install setuptools wheel twine build
 
-      - name: Build package
-        run: python -m build
+      - name: Verify installed packages (debugging)
+        run: pip list
 
+      - name: Build package
+        run: python -m build  # This should work now
 
       - name: Publish to TestPyPI
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TEST_API_TOKEN }}  # Use your new secret
+          TWINE_PASSWORD: ${{ secrets.PYPI_TEST_API_TOKEN }}
         run: |
           twine upload --repository-url https://test.pypi.org/legacy/ dist/*
