@@ -10,7 +10,9 @@ pip install git+https://github.com/yourgithub/preparelatexforsubmission.git
 
 ## Instructions
 1 - Download zip file from Overleaf
+
 2 - Unzip it
+
 3 - in terminal run:
 
 ```bash
