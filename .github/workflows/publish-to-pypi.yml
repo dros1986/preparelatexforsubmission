@@ -23,7 +23,8 @@ jobs:
           pip install setuptools wheel twine
 
       - name: Build package
-        run: python setup.py sdist bdist_wheel
+        run: python -m build
+
 
       - name: Publish to PyPI
         env:
