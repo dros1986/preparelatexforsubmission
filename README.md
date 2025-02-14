@@ -18,7 +18,7 @@ pip install preparelatexforsubmission
 of from this GitHub repository with:
 
 ```bash
-pip install git+https://github.com/yourgithub/preparelatexforsubmission.git
+pip install git+https://github.com/dros1986/preparelatexforsubmission.git
 ```
 
 ## Instructions
